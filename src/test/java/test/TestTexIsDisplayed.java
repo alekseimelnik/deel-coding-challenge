@@ -28,7 +28,7 @@ Verify that:
      */
 
     SalaryInsights salaryInsights;
-    public String role = "QA ";
+    public String role = "QA Engineer";
     public String country = "Canada";
 
     @BeforeAll
@@ -49,12 +49,17 @@ Verify that:
     @Test
     public void checkTextIsDisplayed() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        step("Assert that " + role + " role and " + country + " country is displayed" +
-                " in the header of the chart", () -> {
+        step("Assert that " + role + " role and " + country + " country are selected" +
+                " and the Submit button is clicked", () -> {
             salaryInsights.clickSubmitBtn(role, country);
         });
-        assertThat(salaryInsights.headerField.getText()).contains(role);
-        assertThat(salaryInsights.headerField.getText()).contains(country);
+        step("Assert that " + role + " role is displayed in the header of the chart", () -> {
+            assertThat(salaryInsights.headerField.getText()).contains(role);
+        });
+        step("Assert that " + country + " country is displayed in the header of the chart", () -> {
+            assertThat(salaryInsights.headerField.getText()).contains(country);
+        });
+
 
         SelenideLogger.removeListener("AllureSelenide");
     }
