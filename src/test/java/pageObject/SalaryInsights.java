@@ -21,16 +21,16 @@ public class SalaryInsights {
     public void clickSubmitBtn(String role, String country) {
         roleInput.shouldBe(visible, enabled);
         roleInput.sendKeys(role);
-        sleep(2000);
+        sleep(1000);
         roleInput.sendKeys(Keys.DOWN);
         roleInput.sendKeys(Keys.DOWN);
-        sleep(2000);
+        sleep(1000);
         roleInput.sendKeys(Keys.RETURN);
-        sleep(2000);
+        sleep(1000);
         countryInput.shouldBe(visible, enabled).setValue(country);
-        sleep(2000);
+        sleep(1000);
         countryInput.sendKeys(Keys.DOWN,Keys.RETURN);
-        sleep(2000);
+        sleep(1000);
         submitBtn.shouldBe(visible,enabled).click();
     }
 

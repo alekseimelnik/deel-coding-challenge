@@ -1,5 +1,7 @@
 package test;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import pageObject.SalaryInsights;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.*;
@@ -38,13 +40,13 @@ Verify that:
     }
     @Test
     public void checkTextIsDisplayed() {
-//        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
         salaryInsights.clickSubmitBtn(role, country);
         assertThat(salaryInsights.headerField.getText()).contains(role);
         assertThat(salaryInsights.headerField.getText()).contains(country);
 
-//        SelenideLogger.removeListener("AllureSelenide");
+        SelenideLogger.removeListener("AllureSelenide");
     }
 
     @Test
