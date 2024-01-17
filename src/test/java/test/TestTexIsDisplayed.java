@@ -12,6 +12,7 @@ import org.junit.jupiter.api.*;
 
 
 import static com.codeborne.selenide.Selenide.open;
+import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class TestTexIsDisplayed {
@@ -48,7 +49,10 @@ Verify that:
     @Test
     public void checkTextIsDisplayed() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-
+        step("Assert that " + role + " role and " + country + " country is displayed" +
+                " in the header of the chart", () -> {
+            salaryInsights.clickSubmitBtn(role, country);
+        });
         salaryInsights.clickSubmitBtn(role, country);
         assertThat(salaryInsights.headerField.getText()).contains(role);
         assertThat(salaryInsights.headerField.getText()).contains(country);
