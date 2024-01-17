@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="711f50bd-9a1a-49ee-a279-4b621f891072" name="Changes" comment="workspace.xml file adjusted">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObject/SalaryInsights.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test/TestTexIsDisplayed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/SalaryInsights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/SalaryInsights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/TestTexIsDisplayed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestTexIsDisplayed.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +46,12 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="deel-coding-challenge" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="deel-coding-challenge" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -72,21 +81,29 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.TestTexIsDisplayed.checkTextIsDisplayed (1).executor": "Run",
+    "Gradle.TestTexIsDisplayed.checkTextIsDisplayed.executor": "Run",
     "Gradle.TestTexIsDisplayed.executor": "Run",
+    "Gradle.TestTexIsDisplayed.fooTest.executor": "Run",
     "Gradle.TestTexIsDisplayed.testFoo.executor": "Run",
-    "Gradle.TestTexIsDisplayed.testTextIsDisplayed.executor": "Debug",
+    "Gradle.TestTexIsDisplayed.testTextIsDisplayed.executor": "Run",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
     "Gradle.deel-coding-challenge [buildDependents].executor": "Run",
     "Gradle.deel-coding-challenge [build].executor": "Debug",
+    "Gradle.deel-coding-challenge [testClasses].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.deel-coding-challenge [build]">
-    <configuration name="TestTexIsDisplayed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="JUnit.TestTexIsDisplayed.checkTextIsDisplayed">
+    <configuration name="TestTexIsDisplayed.checkTextIsDisplayed (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -99,7 +116,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;Test.TestTexIsDisplayed&quot;" />
+            <option value="&quot;test.TestTexIsDisplayed.checkTextIsDisplayed&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -110,7 +127,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestTexIsDisplayed.testFoo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTexIsDisplayed.checkTextIsDisplayed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -123,7 +140,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;Test.TestTexIsDisplayed.testFoo&quot;" />
+            <option value="&quot;Test.TestTexIsDisplayed.checkTextIsDisplayed&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTexIsDisplayed.fooTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;Test.TestTexIsDisplayed.fooTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -158,57 +199,29 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="deel-coding-challenge [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="deel-coding-challenge [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
+    <configuration name="TestTexIsDisplayed.checkTextIsDisplayed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="deel-coding-challenge.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestTexIsDisplayed" />
+      <option name="METHOD_NAME" value="checkTextIsDisplayed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.deel-coding-challenge [build]" />
+        <item itemvalue="JUnit.TestTexIsDisplayed.checkTextIsDisplayed" />
+        <item itemvalue="Gradle.TestTexIsDisplayed.checkTextIsDisplayed (1)" />
+        <item itemvalue="Gradle.TestTexIsDisplayed.checkTextIsDisplayed" />
+        <item itemvalue="Gradle.TestTexIsDisplayed.fooTest" />
         <item itemvalue="Gradle.TestTexIsDisplayed.testTextIsDisplayed" />
-        <item itemvalue="Gradle.deel-coding-challenge [buildDependents]" />
-        <item itemvalue="Gradle.TestTexIsDisplayed.testFoo" />
-        <item itemvalue="Gradle.TestTexIsDisplayed" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705453285599</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="workspace.xml file adjusted">
+      <option name="closed" value="true" />
+      <created>1705494148698</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705494148698</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,9 +1,7 @@
-package Test;
+package test;
 
-import PageObject.SalaryInsights;
+import pageObject.SalaryInsights;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 
 
@@ -35,11 +33,11 @@ Verify that:
 
     @BeforeEach
     void setUp() {
-        open(Configuration.baseUrl);
+        open("https://growth.deel.training/dev/salary-insights");
         salaryInsights = new SalaryInsights();
     }
     @Test
-    public void testTextIsDisplayed() {
+    public void checkTextIsDisplayed() {
 //        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
         salaryInsights.clickSubmitBtn(role, country);
@@ -49,4 +47,7 @@ Verify that:
 //        SelenideLogger.removeListener("AllureSelenide");
     }
 
+    @Test
+    void fooTest() {
+    }
 }
