@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jan 17 15:01:15 GMT 2024","Wed Jan 17 15:01:25 GMT 2024","9811","","test.TestTexIsDisplayed","","test.TestTexIsDisplayed","checkTextIsDisplayed","checkTextIsDisplayed()",""
