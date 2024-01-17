@@ -49,7 +49,4 @@ Verify that:
         SelenideLogger.removeListener("AllureSelenide");
     }
 
-    @Test
-    void fooTest() {
-    }
 }
