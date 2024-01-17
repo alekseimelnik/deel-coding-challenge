@@ -53,7 +53,6 @@ Verify that:
                 " in the header of the chart", () -> {
             salaryInsights.clickSubmitBtn(role, country);
         });
-        salaryInsights.clickSubmitBtn(role, country);
         assertThat(salaryInsights.headerField.getText()).contains(role);
         assertThat(salaryInsights.headerField.getText()).contains(country);
 
