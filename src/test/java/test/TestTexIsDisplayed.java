@@ -2,6 +2,10 @@ package test;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import pageObject.SalaryInsights;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.*;
@@ -23,7 +27,6 @@ Verify that:
      */
 
     SalaryInsights salaryInsights;
-
     public String role = "QA ";
     public String country = "Canada";
 
@@ -31,8 +34,12 @@ Verify that:
     static void beforeAll() {
         Configuration.baseUrl = "https://growth.deel.training/dev/salary-insights";
         Configuration.browserSize = "1920x1080";
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-gpu");
+        Configuration.browserCapabilities = options;
     }
-
     @BeforeEach
     void setUp() {
         open("https://growth.deel.training/dev/salary-insights");
